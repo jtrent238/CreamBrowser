@@ -1,0 +1,2883 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB825BEE-5F88-41D9-A5A3-203F06B191CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CreamBrowser.My.MyApplication</StartupObject>
+    <RootNamespace>CreamBrowser</RootNamespace>
+    <AssemblyName>CreamBrowser</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>https://github.com/jtrent238/CreamBrowser</SupportUrl>
+    <ErrorReportUrl>https://github.com/jtrent238/CreamBrowser/issues</ErrorReportUrl>
+    <ProductName>CreamBrowser</ProductName>
+    <PublisherName>jtrent238</PublisherName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CreamBrowser.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CreamBrowser.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\In-yang.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>CA67C56B74C9A7A811CA9994348C6E6AC43AC0F4</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreamBrowser.Designer.vb">
+      <DependentUpon>CreamBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreamBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CreamBrowser.resx">
+      <DependentUpon>CreamBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d bar chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accounting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Address book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alarm clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alarm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anchor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Application.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bad mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bomb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Briefcase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Company.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Compass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Component.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Create.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Danger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delivery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Disaster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Downloads folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Earth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E-mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Equipment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Erase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Euro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fast-forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Favourites.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Film.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\First record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\First.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flash drive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forbidden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free bsd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gift.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Globe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Go back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Go forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Go.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Good mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help book 3d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\History.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hourglass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How-to.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hungup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\In-yang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Last recor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Letter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lightning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Liner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Linux.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\List.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Load.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Low rating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Magic wand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medium rating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mobile-phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Movie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Network connection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next track.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No-entry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Percent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone number.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pinion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Playback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play-music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Previous record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Problem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Radiation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Raise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Retort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rewind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Schedule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Script.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Silence.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stock graph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stopwatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sync.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Taxi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Terminate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thumbs down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thumbs up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toolbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trackback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tune.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Turn off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Volume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d bar chart.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abort.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accounting.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address book.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm clock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alert.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anchor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bad mark.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bee.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black bookmark.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black pin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black tag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue bookmark.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue pin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue tag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bomb.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottom.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brush.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CD.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compass.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\component.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\danger.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diagram.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dial.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disaster.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\display.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downloads folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eject.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e-mail.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equipment.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\erase.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\euro.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fall.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fast-forward.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favourites.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female symbol.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\film.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first record.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flash drive.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forbidden.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free bsd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gift.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\globe.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go back.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go forward.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\good mark.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green bookmark.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green pin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green tag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hard disk.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help book 3d.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help book.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hint.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hourglass.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\how-to.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hungup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\In-yang.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last recor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left-right.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\letter.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lightning.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\liner.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linux.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\low rating.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magic wand.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male symbol.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medium rating.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobile-phone.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modify.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mute.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network connection.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new document.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next track.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-entry.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notes.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\percent.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone number.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picture.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pie chart.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinion.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playback.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-music.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous record.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\problem.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radiation.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raise.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\record.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red bookmark.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red mark.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red pin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red star.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red tag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repair.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\retort.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rewind.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\script.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shield.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping cart.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silence.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock graph.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop sign.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stopwatch.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sum.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sync.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\target.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taxi.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terminate.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text preview.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumbs down.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumbs up.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbox.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trackback.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tune.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turn off.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up-down.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user group.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallet.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrench.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow bookmark.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow pin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow tag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yes.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d bar chart.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abort.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accounting.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Address book.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alarm clock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alarm.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alert.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alien.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anchor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Application.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apply.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bad mark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bee.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black bookmark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black pin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black tag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blog.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue bookmark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue key.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue pin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue tag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bomb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bookmark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boss.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bottom.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Briefcase.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brush.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bubble.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calculator.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car key.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comment.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Company.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Compass.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Component.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Create.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cut.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Danger.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delivery.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diagram.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dial.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Disaster.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dollar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Door.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Downloads folder.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Earth.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eject.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E-mail.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Equipment.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Erase.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Euro.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eye.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fall.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fast-forward.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Favourites.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female symbol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Film.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Filter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\First record.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\First.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flash drive.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forbidden.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free bsd.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gift.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Globe.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Go back.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Go forward.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Go.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Good mark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green bookmark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green pin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green tag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard disk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Heart.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help book 3d.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help book.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hint.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\History.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hourglass.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How-to.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hungup.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\In-yang.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Last recor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Last.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left-right.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Letter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lightning.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Liner.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Linux.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\List.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Load.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Low rating.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Magic wand.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mail.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male symbol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medium rating.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Message.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mobile-phone.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modify.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Move.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Movie.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Music.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mute.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Network connection.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New document.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next track.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No-entry.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notes.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Percent.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Person.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone number.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie chart.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pinion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Playback.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play-music.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Previous record.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Previous.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Problem.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Question.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Radiation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Raise.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red bookmark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red mark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red pin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red star.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red tag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repair.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Retort.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rewind.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sad.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Schedule.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Script.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shield.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping cart.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Silence.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smile.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stock graph.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop sign.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stopwatch.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sum.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sync.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Table.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Taxi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Terminate.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text preview.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thumbs down.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thumbs up.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toolbox.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Top.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trackback.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tune.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Turn off.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Twitter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unlock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up-down.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Upload.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User group.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Volume.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallet.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wrench.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow bookmark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow pin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow tag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yes.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d bar chart.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abort.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accounting.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Address book.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alarm clock.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alarm.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alert.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alien.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anchor.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Application.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apply.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bad mark.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bee.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black bookmark.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black pin.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black tag.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blog.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue bookmark.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue key.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue pin.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue tag.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bomb.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bookmark.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boss.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bottom.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Briefcase.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brush.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bubble.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buy.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calculator.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car key.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CD.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coin.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comment.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Company.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Compass.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Component.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computer.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Create.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cut.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Danger.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delivery.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diagram.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dial.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Disaster.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Display.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dollar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Door.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Downloads folder.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Earth.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eject.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E-mail.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Equipment.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Erase.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Euro.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eye.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fast-forward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Favourites.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female symbol.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Film.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Filter.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\First record.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\First.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flash drive.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forbidden.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free bsd.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gift.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Globe.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Go back.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Go forward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Go.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Good mark.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green bookmark.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green pin.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green tag.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard disk.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Heart.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help book 3d.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help book.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hint.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\History.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hourglass.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How-to.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hungup.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\In-yang.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Last recor.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Last.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left-right.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Letter.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lightning.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Liner.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Linux.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\List.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Load.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Low rating.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Magic wand.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mail.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male symbol.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medium rating.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Message.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mobile-phone.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modify.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Move.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Movie.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Music.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mute.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Network connection.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New document.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next track.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No-entry.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notes.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Percent.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Person.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone number.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie chart.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pinion.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Playback.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play-music.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Previous record.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Previous.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Problem.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Question.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Radiation.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Raise.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red bookmark.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red mark.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red pin.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red star.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red tag.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repair.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Retort.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rewind.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sad.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Schedule.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Script.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shield.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping cart.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Silence.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smile.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stock graph.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop sign.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stopwatch.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sum.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sync.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Table.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Target.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Taxi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Terminate.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text preview.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thumbs down.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thumbs up.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toolbox.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Top.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trackback.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tune.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Turn off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Twitter.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unlock.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up-down.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Upload.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User group.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Volume.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallet.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wrench.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow bookmark.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow pin.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow tag.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yes.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

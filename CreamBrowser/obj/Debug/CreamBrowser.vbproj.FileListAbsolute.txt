@@ -1,0 +1,16 @@
+c:\users\trent\documents\visual studio 2013\Projects\CreamBrowser\CreamBrowser\bin\Debug\CreamBrowser.exe.config
+C:\Users\trent\Documents\Visual Studio 2013\Projects\CreamBrowser\CreamBrowser\bin\Debug\CreamBrowser.exe.manifest
+C:\Users\trent\Documents\Visual Studio 2013\Projects\CreamBrowser\CreamBrowser\bin\Debug\CreamBrowser.application
+C:\Users\trent\Documents\Visual Studio 2013\Projects\CreamBrowser\CreamBrowser\bin\Debug\CreamBrowser.exe
+C:\Users\trent\Documents\Visual Studio 2013\Projects\CreamBrowser\CreamBrowser\bin\Debug\CreamBrowser.pdb
+C:\Users\trent\Documents\Visual Studio 2013\Projects\CreamBrowser\CreamBrowser\bin\Debug\CreamBrowser.xml
+C:\Users\trent\Documents\Visual Studio 2013\Projects\CreamBrowser\CreamBrowser\obj\Debug\CreamBrowser.CreamBrowser.resources
+C:\Users\trent\Documents\Visual Studio 2013\Projects\CreamBrowser\CreamBrowser\obj\Debug\CreamBrowser.Resources.resources
+C:\Users\trent\Documents\Visual Studio 2013\Projects\CreamBrowser\CreamBrowser\obj\Debug\CreamBrowser.SplashScreen.resources
+C:\Users\trent\Documents\Visual Studio 2013\Projects\CreamBrowser\CreamBrowser\obj\Debug\CreamBrowser.vbproj.GenerateResource.Cache
+C:\Users\trent\Documents\Visual Studio 2013\Projects\CreamBrowser\CreamBrowser\obj\Debug\CreamBrowser.TrustInfo.xml
+C:\Users\trent\Documents\Visual Studio 2013\Projects\CreamBrowser\CreamBrowser\obj\Debug\CreamBrowser.exe.manifest
+C:\Users\trent\Documents\Visual Studio 2013\Projects\CreamBrowser\CreamBrowser\obj\Debug\CreamBrowser.application
+C:\Users\trent\Documents\Visual Studio 2013\Projects\CreamBrowser\CreamBrowser\obj\Debug\CreamBrowser.exe
+C:\Users\trent\Documents\Visual Studio 2013\Projects\CreamBrowser\CreamBrowser\obj\Debug\CreamBrowser.xml
+C:\Users\trent\Documents\Visual Studio 2013\Projects\CreamBrowser\CreamBrowser\obj\Debug\CreamBrowser.pdb
